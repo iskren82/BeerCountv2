@@ -33,7 +33,7 @@ class CountView: UIViewController {
         topBeerCounter.layer.backgroundColor  = UIColor.red.cgColor
         topBeerCounter.layer.cornerRadius = 15
         topBeerCounter.layer.masksToBounds = true
-        topBeerCounter.layer.borderWidth = 2
+        topBeerCounter.layer.borderWidth = 2 
         topBeerCounter.layer.borderColor = UIColor.white.cgColor
     }
     
