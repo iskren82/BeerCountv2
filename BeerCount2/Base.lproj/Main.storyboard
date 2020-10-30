@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKM-3I-STn" propertyAccessControl="none">
-                                <rect key="frame" x="88" y="706" width="215" height="50"/>
+                                <rect key="frame" x="88" y="715" width="215" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="801-z8-VZx"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerMugPng" translatesAutoresizingMaskIntoConstraints="NO" id="3Y1-da-h42">
-                                <rect key="frame" x="66" y="293" width="259" height="250"/>
+                                <rect key="frame" x="66" y="293" width="259" height="259"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="259" id="Pcg-mI-7S0"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="259" id="fk1-9r-O9l"/>
@@ -120,7 +120,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxz-gU-kQn">
                                 <rect key="frame" x="86" y="377" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="beerMugPng"/>
+                                <state key="normal" image="beerMugPng"/>
                                 <connections>
                                     <action selector="countBeerButton:" destination="orB-gw-jPH" eventType="touchUpInside" id="Dbe-0E-Lc4"/>
                                 </connections>
