@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B09C5DD9254CD13D00B56143 /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09C5DD8254CD13D00B56143 /* CountView.swift */; };
 		B0DFA39C25461EFE0023BA61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DFA39B25461EFE0023BA61 /* AppDelegate.swift */; };
 		B0DFA39E25461EFE0023BA61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DFA39D25461EFE0023BA61 /* SceneDelegate.swift */; };
 		B0DFA3A025461EFE0023BA61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DFA39F25461EFE0023BA61 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B09C5DD8254CD13D00B56143 /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
 		B0DFA39825461EFE0023BA61 /* BeerCount2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerCount2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DFA39B25461EFE0023BA61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0DFA39D25461EFE0023BA61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				B0DFA39B25461EFE0023BA61 /* AppDelegate.swift */,
 				B0DFA39D25461EFE0023BA61 /* SceneDelegate.swift */,
 				B0DFA39F25461EFE0023BA61 /* ViewController.swift */,
+				B09C5DD8254CD13D00B56143 /* CountView.swift */,
 				B0DFA3A125461EFE0023BA61 /* Main.storyboard */,
 				B0DFA3A425461F000023BA61 /* Assets.xcassets */,
 				B0DFA3A625461F000023BA61 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				B0DFA3A025461EFE0023BA61 /* ViewController.swift in Sources */,
 				B0DFA39C25461EFE0023BA61 /* AppDelegate.swift in Sources */,
+				B09C5DD9254CD13D00B56143 /* CountView.swift in Sources */,
 				B0DFA39E25461EFE0023BA61 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +290,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BeerCount2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,8 +299,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iskren82.BeerCount2.BeerCount2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +310,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BeerCount2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,8 +319,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iskren82.BeerCount2.BeerCount2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
