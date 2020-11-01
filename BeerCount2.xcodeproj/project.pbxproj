@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00A05AF254E73E2008E21B2 /* ExpandedStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00A05AE254E73E2008E21B2 /* ExpandedStats.swift */; };
 		B09C5DD9254CD13D00B56143 /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09C5DD8254CD13D00B56143 /* CountView.swift */; };
 		B0DFA39C25461EFE0023BA61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DFA39B25461EFE0023BA61 /* AppDelegate.swift */; };
 		B0DFA39E25461EFE0023BA61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DFA39D25461EFE0023BA61 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B00A05AE254E73E2008E21B2 /* ExpandedStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedStats.swift; sourceTree = "<group>"; };
 		B09C5DD8254CD13D00B56143 /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
 		B0DFA39825461EFE0023BA61 /* BeerCount2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerCount2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DFA39B25461EFE0023BA61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +62,10 @@
 			children = (
 				B0DFA39B25461EFE0023BA61 /* AppDelegate.swift */,
 				B0DFA39D25461EFE0023BA61 /* SceneDelegate.swift */,
+				B0DFA3A125461EFE0023BA61 /* Main.storyboard */,
 				B0DFA39F25461EFE0023BA61 /* ViewController.swift */,
 				B09C5DD8254CD13D00B56143 /* CountView.swift */,
-				B0DFA3A125461EFE0023BA61 /* Main.storyboard */,
+				B00A05AE254E73E2008E21B2 /* ExpandedStats.swift */,
 				B0DFA3A425461F000023BA61 /* Assets.xcassets */,
 				B0DFA3A625461F000023BA61 /* LaunchScreen.storyboard */,
 				B0DFA3A925461F000023BA61 /* Info.plist */,
@@ -144,6 +147,7 @@
 				B0DFA39C25461EFE0023BA61 /* AppDelegate.swift in Sources */,
 				B09C5DD9254CD13D00B56143 /* CountView.swift in Sources */,
 				B0DFA39E25461EFE0023BA61 /* SceneDelegate.swift in Sources */,
+				B00A05AF254E73E2008E21B2 /* ExpandedStats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
