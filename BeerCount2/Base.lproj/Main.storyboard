@@ -328,8 +328,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH4-Ua-tfk">
-                                <rect key="frame" x="180" y="390" width="30" height="30"/>
+                                <rect key="frame" x="152" y="390" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear Values"/>
                                 <connections>
                                     <action selector="clearValues:" destination="Lhi-2Z-G4r" eventType="touchUpInside" id="3wo-gZ-WbO"/>
                                 </connections>

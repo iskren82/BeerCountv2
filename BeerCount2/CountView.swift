@@ -7,9 +7,11 @@
 
 import UIKit
 import QuartzCore
-var beerCount: Double = 0.0
+var beerCount: Double = 0
 
 class CountView: UIViewController {
+    
+    
     
     @IBOutlet weak var topBeerCountLabel: UILabel!
     
@@ -40,6 +42,7 @@ class CountView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateValues()
         roundLabel()
     }
 
@@ -57,9 +60,10 @@ class CountView: UIViewController {
     
     
 
-    private func updateValues () {
+    public func updateValues () {
         topBeerCounter.text = String(format: "%.0f", beerCount)
         topBeerCountLabel.text = String(format: "%.0f", beerCount)
+        
     }
 
 }
