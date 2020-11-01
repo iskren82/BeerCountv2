@@ -50,7 +50,7 @@ class ExpandedStats: UIViewController {
 
     private func updateCountValues () {
         beerMugsLabel.text = String(format: "%.0f", lastBeerCount)
-        beerLitersLabel.text = String(format: "%.0f", lastBeerCount / 2)
+        beerLitersLabel.text = String(format: "%.1f", lastBeerCount / 2)
         caloriesLabel.text = String(format: "%.0f", lastBeerCount * 2300)
         moneyLabel.text = String(format: "%.2f", lastBeerCount * 3.50)
         
