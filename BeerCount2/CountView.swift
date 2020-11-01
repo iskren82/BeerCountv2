@@ -7,18 +7,34 @@
 
 import UIKit
 import QuartzCore
+var beerCount = 0
 
 class CountView: UIViewController {
     
-    var beerCount = 0
+    @IBOutlet weak var topBeerCountLabel: UILabel!
+    
     
     @IBOutlet weak var topBeerCounter: UILabel!
+
     @IBAction func countBeerButton(_ sender: Any) {
         
         beerCount += 1
         updateValues()
     }
     
+    
+    
+    @IBAction func minusBeerButton(_ sender: Any) {
+        
+        if beerCount > 1 {
+            
+            beerCount -= 1
+        }
+        else {
+            beerCount = 0
+        }
+        updateValues()
+    }
     
     
 
@@ -43,7 +59,7 @@ class CountView: UIViewController {
 
     private func updateValues () {
         topBeerCounter.text = "\(beerCount)"
-        
+        topBeerCountLabel.text = "\(beerCount)"
     }
 
 }

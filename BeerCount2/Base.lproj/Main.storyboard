@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKM-3I-STn" propertyAccessControl="none">
-                                <rect key="frame" x="88" y="715" width="215" height="50"/>
+                                <rect key="frame" x="88" y="706" width="215" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="801-z8-VZx"/>
@@ -52,7 +53,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerMugPng" translatesAutoresizingMaskIntoConstraints="NO" id="3Y1-da-h42">
-                                <rect key="frame" x="66" y="293" width="259" height="259"/>
+                                <rect key="frame" x="66" y="293" width="259" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="259" id="Pcg-mI-7S0"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="259" id="fk1-9r-O9l"/>
@@ -89,47 +90,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap on the beer mug when you order a beer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjh-ks-djY">
-                                <rect key="frame" x="54" y="610" width="282" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe down to close" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIu-FN-Bys">
+                                <rect key="frame" x="129" y="20" width="133" height="17"/>
                                 <color key="tintColor" systemColor="quaternaryLabelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <color key="highlightedColor" systemColor="secondaryLabelColor"/>
+                                <color key="highlightedColor" name="AccentColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lI-HL-P3O">
-                                <rect key="frame" x="276" y="402" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPy-Dn-Lla">
-                                <rect key="frame" x="143" y="697" width="105" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPy-Dn-Lla">
+                                <rect key="frame" x="95" y="661" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="A8o-nd-29q"/>
+                                    <constraint firstAttribute="width" constant="200" id="Imj-Rl-56q"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <state key="normal" title="Show stats">
+                                <state key="normal" title="Show more stats">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="Lhi-2Z-G4r" kind="show" id="TRG-qx-LeI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxz-gU-kQn">
-                                <rect key="frame" x="86" y="377" width="250" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="beerMugPng"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lI-HL-P3O">
+                                <rect key="frame" x="265" y="411" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E9D-JB-Jeu"/>
+                                    <constraint firstAttribute="width" constant="30" id="MIK-Ds-Ypf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxz-gU-kQn">
+                                <rect key="frame" x="95" y="411" width="200" height="200"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="79X-O9-gKO"/>
+                                    <constraint firstAttribute="width" constant="200" id="HCU-cg-75I"/>
+                                </constraints>
+                                <state key="normal" image="plusButton"/>
                                 <connections>
                                     <action selector="countBeerButton:" destination="orB-gw-jPH" eventType="touchUpInside" id="Dbe-0E-Lc4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujB-AY-tJa">
+                                <rect key="frame" x="54" y="573" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="D2e-hv-g6C"/>
+                                    <constraint firstAttribute="height" constant="80" id="icj-zw-ftO"/>
+                                </constraints>
+                                <state key="normal" image="minusButton"/>
+                                <connections>
+                                    <action selector="minusBeerButton:" destination="orB-gw-jPH" eventType="touchUpInside" id="TSd-Gs-ojD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the plus when you order a beer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjh-ks-djY">
+                                <rect key="frame" x="71.666666666666686" y="137" width="247" height="17"/>
+                                <color key="tintColor" systemColor="quaternaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <color key="highlightedColor" systemColor="systemBlueColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1sP-RC-C8X">
+                                <rect key="frame" x="96.000000000000014" y="87" width="250.33333333333337" height="33.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beers Consumed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tma-WB-ybx">
+                                        <rect key="frame" x="0.0" y="0.0" width="207.33333333333334" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnL-3n-skx">
+                                        <rect key="frame" x="215.33333333333331" y="0.0" width="35" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerMugPng" translatesAutoresizingMaskIntoConstraints="NO" id="g1x-ag-Od3">
+                                <rect key="frame" x="41" y="78" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Adu-8W-BgV"/>
+                                    <constraint firstAttribute="width" constant="45" id="d4A-kt-gcI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E6x-Ao-FGB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="E6x-Ao-FGB" firstAttribute="trailing" secondItem="ujB-AY-tJa" secondAttribute="trailing" constant="256" id="0JZ-HD-hd0"/>
+                            <constraint firstItem="Kjh-ks-djY" firstAttribute="top" secondItem="g1x-ag-Od3" secondAttribute="bottom" constant="14" id="5jh-x9-DQH"/>
+                            <constraint firstItem="AIu-FN-Bys" firstAttribute="leading" secondItem="E6x-Ao-FGB" secondAttribute="leading" constant="129" id="6fc-Fg-dE1"/>
+                            <constraint firstItem="EPy-Dn-Lla" firstAttribute="top" secondItem="1lI-HL-P3O" secondAttribute="bottom" constant="220" id="6rQ-p2-D6S"/>
+                            <constraint firstItem="Kjh-ks-djY" firstAttribute="centerX" secondItem="yqk-zn-94G" secondAttribute="centerX" id="8aN-n8-HHx"/>
+                            <constraint firstItem="1lI-HL-P3O" firstAttribute="leading" secondItem="E6x-Ao-FGB" secondAttribute="leading" constant="265" id="A9I-bi-76g"/>
+                            <constraint firstItem="g1x-ag-Od3" firstAttribute="top" secondItem="E6x-Ao-FGB" secondAttribute="top" constant="78" id="AO8-lN-MVo"/>
+                            <constraint firstItem="1sP-RC-C8X" firstAttribute="leading" secondItem="g1x-ag-Od3" secondAttribute="trailing" constant="10" id="BR4-2s-fu5"/>
+                            <constraint firstItem="E6x-Ao-FGB" firstAttribute="trailing" secondItem="Kjh-ks-djY" secondAttribute="trailing" constant="71.329999999999998" id="BYp-u8-wot"/>
+                            <constraint firstItem="g1x-ag-Od3" firstAttribute="leading" secondItem="E6x-Ao-FGB" secondAttribute="leading" constant="41" id="IQ6-Eu-iD2"/>
+                            <constraint firstItem="AIu-FN-Bys" firstAttribute="top" secondItem="E6x-Ao-FGB" secondAttribute="top" constant="20" id="JbE-ta-HhE"/>
+                            <constraint firstItem="Kjh-ks-djY" firstAttribute="leading" secondItem="E6x-Ao-FGB" secondAttribute="leading" constant="71.670000000000002" id="KuW-lf-7W2"/>
+                            <constraint firstItem="EPy-Dn-Lla" firstAttribute="top" secondItem="fxz-gU-kQn" secondAttribute="bottom" constant="50" id="PyC-5z-re0"/>
+                            <constraint firstItem="EPy-Dn-Lla" firstAttribute="centerX" secondItem="yqk-zn-94G" secondAttribute="centerX" id="XQS-2n-78V"/>
+                            <constraint firstItem="EPy-Dn-Lla" firstAttribute="centerX" secondItem="yqk-zn-94G" secondAttribute="centerX" id="dSv-VX-q6l"/>
+                            <constraint firstItem="fxz-gU-kQn" firstAttribute="centerX" secondItem="yqk-zn-94G" secondAttribute="centerX" id="eEW-f1-ZtV"/>
+                            <constraint firstItem="EPy-Dn-Lla" firstAttribute="top" secondItem="ujB-AY-tJa" secondAttribute="bottom" constant="8" symbolic="YES" id="ez4-6N-Tc1"/>
+                            <constraint firstItem="E6x-Ao-FGB" firstAttribute="trailing" secondItem="AIu-FN-Bys" secondAttribute="trailing" constant="128" id="g13-HS-R26"/>
+                            <constraint firstItem="1sP-RC-C8X" firstAttribute="top" secondItem="AIu-FN-Bys" secondAttribute="bottom" constant="50" id="hu0-xC-Eys"/>
+                            <constraint firstItem="1sP-RC-C8X" firstAttribute="leading" secondItem="g1x-ag-Od3" secondAttribute="trailing" constant="10" id="jBd-GP-5k6"/>
+                            <constraint firstItem="ujB-AY-tJa" firstAttribute="leading" secondItem="E6x-Ao-FGB" secondAttribute="leading" constant="54" id="nl0-yN-HAw"/>
+                            <constraint firstItem="E6x-Ao-FGB" firstAttribute="bottom" secondItem="EPy-Dn-Lla" secondAttribute="bottom" constant="45" id="y6S-KG-yxu"/>
+                            <constraint firstItem="E6x-Ao-FGB" firstAttribute="trailing" secondItem="1lI-HL-P3O" secondAttribute="trailing" constant="95" id="zja-cm-9GZ"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="topBeerCountLabel" destination="cnL-3n-skx" id="vfL-4b-ow6"/>
                         <outlet property="topBeerCounter" destination="1lI-HL-P3O" id="Q9l-M8-ozI"/>
                     </connections>
                 </viewController>
@@ -156,6 +238,11 @@
     </scenes>
     <resources>
         <image name="beerMugPng" width="200" height="200"/>
+        <image name="minusButton" width="120" height="120"/>
+        <image name="plusButton" width="120" height="120"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -167,6 +254,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
