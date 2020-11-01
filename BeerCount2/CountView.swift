@@ -59,20 +59,23 @@ class CountView: UIViewController {
     func roundLabel() {
         
         topBeerCounter.layer.backgroundColor  = UIColor.red.cgColor
-        topBeerCounter.layer.cornerRadius = 15
+        topBeerCounter.layer.cornerRadius = 5
         topBeerCounter.layer.masksToBounds = true
         topBeerCounter.layer.borderWidth = 2 
         topBeerCounter.layer.borderColor = UIColor.white.cgColor
     }
     
     
-    
+   
+    @IBAction func CloseModal(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 
     public func updateValues () {
         lastBeerCount = beerCount
         topBeerCounter.text = String(format: "%.0f", beerCount)
-        topBeerCountLabel.text = String(format: "%.0f", beerCount)
+        //topBeerCountLabel.text = String(format: "%.0f", beerCount)
         
     }
 
