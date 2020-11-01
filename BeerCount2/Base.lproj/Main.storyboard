@@ -181,6 +181,14 @@
                                     <constraint firstAttribute="width" constant="45" id="d4A-kt-gcI"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTe-3u-Vh2">
+                                <rect key="frame" x="143" y="657" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="erase my beers"/>
+                                <connections>
+                                    <action selector="resetValues:" destination="orB-gw-jPH" eventType="touchUpInside" id="LmW-UP-v6C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E6x-Ao-FGB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -328,9 +336,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH4-Ua-tfk">
-                                <rect key="frame" x="152" y="390" width="86" height="30"/>
+                                <rect key="frame" x="180" y="390" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Clear Values"/>
                                 <connections>
                                     <action selector="clearValues:" destination="Lhi-2Z-G4r" eventType="touchUpInside" id="3wo-gZ-WbO"/>
                                 </connections>

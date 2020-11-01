@@ -8,6 +8,7 @@
 import UIKit
 import QuartzCore
 var beerCount: Double = 0
+var lastBeerCount: Double = 0
 
 class CountView: UIViewController {
     
@@ -22,18 +23,26 @@ class CountView: UIViewController {
         
         beerCount += 1
         updateValues()
+        lastBeerCount = beerCount
     }
     
     
+    @IBAction func resetValues(_ sender: Any) {
+        beerCount = 0
+        
+        updateValues()
+    }
     
     @IBAction func minusBeerButton(_ sender: Any) {
         
         if beerCount > 1 {
             
             beerCount -= 1
+            lastBeerCount = beerCount
         }
         else {
             beerCount = 0
+            lastBeerCount = beerCount
         }
         updateValues()
     }
@@ -61,6 +70,7 @@ class CountView: UIViewController {
     
 
     public func updateValues () {
+        lastBeerCount = beerCount
         topBeerCounter.text = String(format: "%.0f", beerCount)
         topBeerCountLabel.text = String(format: "%.0f", beerCount)
         
